@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "lib": [
+      "es6"
+    ],
+    "moduleResolution": "node",
+    "noEmit": true,
+    "target": "esnext",
+    "baseUrl": "src",
+    "paths": {
+      "@assets": [
+        "assets/"
+      ],
+      "@globalStyles": [
+        "assets/globalStyles.ts"
+      ],
+      "@components": [
+        "components/index.ts"
+      ],
+      "@models": [
+        "models/index.ts"
+      ],
+      "@hooks": [
+        "hooks/index.ts"
+      ],
+      "@screens": [
+        "screens/index.ts"
+      ],
+      "@services": [
+        "@services/index.ts"
+      ],
+      "@utils": [
+        "utils/index.ts"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ],
+  "extends": "expo/tsconfig.base"
+}
